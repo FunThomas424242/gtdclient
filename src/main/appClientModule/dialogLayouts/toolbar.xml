@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE View SYSTEM "view.dtd">
+<View>
+
+<ClassAlias class="de.meinkonzern.gtdclient.gui.EventConstants" name="EventConstants" />
+
+	<toolbar guiId="toolbar" orientation="horizontal">
+		<button guiId="saveButton" icon="ICON_SAVE"
+			tooltip="TOOLTIP_SAVE" enabled="{:EventConstants.eventChanged}hasUnsavedChanges"
+			hTextPosition="center" vTextPosition="bottom" actionCommand="doSave" />
+		<button guiId="exitButton" icon="ICON_EXIT"
+			tooltip="TOOLTIP_EXIT" enabled="~t"
+			hTextPosition="center" mnemonic="HOTKEY_ESC" vTextPosition="bottom"
+			actionCommand="onWindowClosing" />
+		<label text="LABEL_COPYRIGHT" />
+	</toolbar>
+</View>

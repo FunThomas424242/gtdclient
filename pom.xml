@@ -1,0 +1,211 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.meinkonzern</groupId>
+	<artifactId>gtdclient</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0-SNAPSHOT</version>
+	<name>GTD Client</name>
+	<url>file:///G:/home/tschubert/workspace_projects/de.meinkonzern.gtdclient/target</url>
+
+
+
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+
+
+	<profiles>
+		<profile>
+			<id>remote</id>
+			<dependencies>
+				<dependency>
+					<groupId>gui4j</groupId>
+					<artifactId>gui4j</artifactId>
+					<version>1.2.3</version>
+					<scope>compile</scope>
+				</dependency>
+				<dependency>
+					<groupId>com.simontuffs.onejar</groupId>
+					<artifactId>one-jar-boot</artifactId>
+					<version>0.97</version>
+					<scope>runtime</scope>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
+
+
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>sourceforge-frs</id>
+			<name>SF Maven Plugin Repository</name>
+			<url>http://sourceforge.net/projects/sf-mvn-plugins/files/m2-repo</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+
+	<repositories>
+		<repository>
+			<id>festrepository</id>
+			<name>FEST Repository</name>
+			<url>
+                http://fest.googlecode.com/svn/trunk/fest/m2/repository
+            </url>
+		</repository>
+
+		<repository>
+			<id>sourceforge-svn</id>
+			<name>SF Maven Plugin SVN Repository</name>
+			<url>http://sf-mvn-plugins.svn.sourceforge.net/svnroot/sf-mvn-plugins/_m2-repo/trunk</url>
+		</repository>
+	</repositories>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-validator</artifactId> 
+			<version>4.0.2.GA</version> </dependency -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-jdk14</artifactId>
+			<version>1.5.6</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>1.0.CR5</version>
+		</dependency>
+	</dependencies>
+
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>net.sf.maven.plugins</groupId>
+				<artifactId>wagon-http-sourceforge</artifactId>
+				<version>0.4</version>
+			</extension>
+		</extensions>
+
+		<resources>
+			<resource>
+				<directory>src/main/appClientModule</directory>
+				<filtering>true</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/jnlp</directory>
+				<targetPath>${project.build.directory}</targetPath>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
+		<plugins>
+			<plugin>
+				<groupId>net.sf.maven.plugins</groupId>
+				<artifactId>jar-install-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>install</goal>
+						</goals>
+						<configuration>
+							<downloads>
+								<downloadArtifact>
+									<url>http://sourceforge.net/projects/one-jar/files/one-jar/0.98%20RCs/one-jar-0.98-RC2/one-jar-boot-0.98.jar/download</url>
+									<groupId>com.simontuffs.onejar</groupId>
+									<artifactId>one-jar-boot</artifactId>
+									<version>0.98</version>
+								</downloadArtifact>
+								<downloadArtifact>
+									<url>http://sourceforge.net/projects/gui4j/files/gui4j/1.2.3/gui4j-1.2.3.jar/download</url>
+									<groupId>gui4j</groupId>
+									<artifactId>gui4j</artifactId>
+									<version>1.2.3</version>
+								</downloadArtifact>
+							</downloads>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>net.sf.maven.plugins</groupId>
+				<artifactId>1jar-maven-plugin</artifactId>
+				<version>0.2</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>1jar</goal>
+						</goals>
+						<configuration>
+							<mainClass>
+								de.meinkonzern.gtdclient.Launcher
+							</mainClass>
+							<stripVersion>false</stripVersion>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.5</version>
+			</plugin>
+
+			<!--plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-jar-plugin</artifactId> 
+				<executions> <execution> <phase>package</phase> <goals> <goal>sign</goal> 
+				</goals> </execution> </executions> <configuration> <jarPath>${project.build.directory}/${project.build.finalName}.one-jar.${project.packaging}</jarPath> 
+				<keystore>${user.keystore}</keystore> <alias>${user.keystore-alias}</alias> 
+				<storepass>${user.keystore-pass}</storepass> <verify>true</verify> </configuration> 
+				</plugin -->
+
+		</plugins>
+	</build>
+
+	<developers>
+		<developer>
+			<id>SchubertT006</id>
+			<name>Thomas Schubert</name>
+			<email>development@thomas-michel.info</email>
+			<timezone>+1</timezone>
+			<roles>
+				<role>Administrator</role>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+
+</project>

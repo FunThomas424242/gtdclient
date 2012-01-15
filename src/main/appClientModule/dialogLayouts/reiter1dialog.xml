@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE View SYSTEM "view.dtd">
+<View>
+	<Include url="styles.xml" alias="styles" />
+
+	<panel guiId="tab1">
+		<vbox>
+			<separator />
+			<label visible="~t" text="'Bereiche'" style="Überschrift" />
+			<flowLayout>
+				<separator />
+				<labelForm>
+					<labelColumn>
+						<markers>
+							<button icon="ICON_INPUT"
+								actionCommand="selectTab(2)" style="Bevel" />
+							<button icon="ICON_INFO"
+								actionCommand="selectTab(3)" style="Bevel" />
+							<button icon="ICON_WAITLIST"
+								actionCommand="selectTab(4)" style="Bevel" />
+							<button icon="ICON_REVIEW"
+								actionCommand="selectTab(5)" style="Bevel" />
+							<button icon="ICON_MANAGEMENT"
+								actionCommand="selectTab(6)" style="Bevel" />
+						</markers>
+						<labels>
+							<label text="'Eingang'" style="Gliederung" />
+							<label text="'Ausführbare Aufgaben'"
+								style="Gliederung" />
+							<label text="'Warteliste'"
+								style="Gliederung" />
+							<label text="'Überprüfung'"
+								style="Gliederung" />
+							<label text="'Verwaltung'"
+								style="Gliederung" />
+						</labels>
+						<components>
+							<label />
+							<label />
+							<label />
+							<label />
+							<label />
+						</components>
+					</labelColumn>
+				</labelForm>
+			</flowLayout>
+			<separator />
+			<label text="'Arbeitsablauf'" style="Überschrift" />
+			<flowLayout>
+				<separator />
+				<vbox>
+					<flowLayout>
+						<label
+							text="{:Events.eventInputActionChanged}getInputQueueText"
+							style="Gliederung" />
+						<button icon="ICON_NEXTSTEP" style="Bevel"
+							visible="{:Events.eventInputActionChanged}hasInput"
+							actionCommand="selectTab(2)" />
+					</flowLayout>
+					<flowLayout>
+						<label text="'Verstrichene Fälligkeiten'"
+							style="Gliederung" />
+						<button icon="ICON_NEXTSTEP" style="Bevel" />
+					</flowLayout>
+					<flowLayout>
+						<label visible="~t"
+							text="'Aufgaben mit Fälligkeit Heute'" style="Gliederung" />
+						<button icon="ICON_NEXTSTEP" style="Bevel" />
+					</flowLayout>
+					<flowLayout>
+						<label
+							text="'Liste sofort ausführbarer Aufgaben'" style="Gliederung" />
+						<button icon="ICON_NEXTSTEP" style="Bevel" />
+					</flowLayout>
+					<flowLayout>
+						<label text="'Liste der wartenden Aufgaben'"
+							style="Gliederung" />
+						<button icon="ICON_NEXTSTEP" style="Bevel" />
+					</flowLayout>
+					<flowLayout>
+						<label text="'Projekte ohne nächsten Schritt'"
+							style="Gliederung" />
+						<button icon="ICON_NEXTSTEP" style="Bevel" />
+					</flowLayout>
+					<flowLayout>
+						<label text="'Leere Projekte'"
+							style="Gliederung" />
+						<button icon="ICON_NEXTSTEP" style="Bevel" />
+					</flowLayout>
+					<flowLayout>
+						<label text="'Zukünftige Projekte'"
+							style="Gliederung" />
+						<button icon="ICON_NEXTSTEP" style="Bevel" />
+					</flowLayout>
+				</vbox>
+			</flowLayout>
+		</vbox>
+	</panel>
+</View>

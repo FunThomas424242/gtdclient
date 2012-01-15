@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE View SYSTEM "view.dtd">
+<View>
+
+	<Include url="styles.xml" alias="styles" />
+
+	<ClassAlias
+		class="de.meinkonzern.gtdclient.gui.Reiter2DialogConstants"
+		name="Constants" />
+
+
+	<splitPane guiId="tab2" orientation="vertical">
+		<vbox>
+			<label text="'Erfasste Ideen'" />
+			<scrollPane>
+				<list content="{:Events.eventInputActionChanged}getInputList" value="?item.toString()"
+					visibleRowCount="3" />
+			</scrollPane>
+			<label text="'Einzusortierende Idee'" />
+			<scrollPane>
+				<textArea
+					text="{:Events.eventInputActionChanged}getActionDescriptionOfTopInputStack()" 
+					setText="setActionDescription(?value)"
+					enabled="{:Events.eventInputActionChanged}hasTopAction()"
+					
+					/>
+			</scrollPane>
+			<flowLayout>
+				<button text="'Weitere Idee erfassen'"
+					actionCommand="createNewTopActionOfInputStack" />
+				<button text="'Löschen'" />
+				<button text="'Einsortieren'" />
+				<label text="'zugeordnetes Projekt'" />
+				<comboBox content="getProjectList"
+					nullItem="'[Keines]'" />
+				<label text="'Erledigungs Termin'" labelFor="doDate"
+					font=":Constants.FONT_BOLD" />
+				<edit guiId="doDate" setValue="setDoDate(?value)"
+					enabled="~t" editable="~t" value="getDoDate" maxLength="10"
+					width="10" />
+				<calendarButton editId="doDate" text="'Kalender'"
+					enabled="~t" vTextPosition="center" />
+				<toggleButton group="'list'" text="'Ausführbar'" />
+				<toggleButton group="'list'" text="'Wartet auf ...'" />
+				<toggleButton text="'Erledigt'" />
+			</flowLayout>
+
+		</vbox>
+		<splitPane orientation="horizontal">
+			<splitPane orientation="vertical">
+				<vbox>
+					<label text="'Ausgewählte Orte'" />
+					<scrollPane>
+						<list content="getProjectList"
+							value="?item.toString()" visibleRowCount="3" />
+					</scrollPane>
+					<hbox>
+						<label text="'Orte der Erledigung'" />
+						<button text="'zuweisen'" />
+						<button text="'lösen'" />
+					</hbox>
+				</vbox>
+				<vbox>
+					<label text="'Verfügbare Orte'" />
+					<scrollPane>
+						<list content="getProjectList"
+							value="?item.toString()" visibleRowCount="3" />
+					</scrollPane>
+					<flowLayout>
+						<label text="'Ort'" font=":Constants.FONT_BOLD" />
+						<edit value="'test'" width="10" />
+						<button text="'Wiederöffnen'" />
+						<button text="'Umbenennen'" />
+						<button text="'Hinzufügen'" />
+						<button text="'Löschen'" />
+					</flowLayout>
+				</vbox>
+			</splitPane>
+			<splitPane orientation="vertical">
+				<vbox>
+					<label text="'Ausgewählte zukünftige Projekte'" />
+					<scrollPane>
+						<list content="getProjectList"
+							value="?item.toString()" visibleRowCount="3" />
+					</scrollPane>
+					<hbox>
+						<label text="'Langfristig mal geplant'" />
+						<button text="'zuweisen'" />
+						<button text="'lösen'" />
+					</hbox>
+				</vbox>
+				<vbox>
+					<label text="'Verfügbare zukünftige Projekte'" />
+					<scrollPane>
+						<list content="getProjectList"
+							value="?item.toString()" visibleRowCount="3" />
+					</scrollPane>
+					<flowLayout>
+						<label text="'Zukünftiges Projekt'" />
+						<edit value="'test'" width="10" />
+						<button text="'Wiederöffnen'" />
+						<button text="'Umbenennen'" />
+						<button text="'Hinzufügen'" />
+						<button text="'Löschen'" />
+					</flowLayout>
+				</vbox>
+			</splitPane>
+		</splitPane>
+	</splitPane>
+
+</View>

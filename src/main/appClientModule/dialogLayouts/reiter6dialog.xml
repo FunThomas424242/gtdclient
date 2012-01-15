@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE View SYSTEM "view.dtd">
+<View>
+	<panel guiId="tab6">
+		<label visible="FALSE" text="getPictureDescription"
+			vAlignment="bottom" hAlignment="center" />
+
+	</panel>
+</View>

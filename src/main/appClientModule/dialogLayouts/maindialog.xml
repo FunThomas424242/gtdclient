@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE View SYSTEM "view.dtd">
+<View defaultButton="toolbar/saveButton" title="getTitle">
+
+	<Include url="styles.xml" alias="styles" />
+
+	<Include url="reiter1dialog.xml" alias="tp1"
+		controller="getReiter1DialogController" />
+	<Include url="reiter2dialog.xml" alias="tp2"
+		controller="getReiter2DialogController" />
+	<Include url="reiter3dialog.xml" alias="tp3" />
+	<Include url="reiter4dialog.xml" alias="tp4" />
+	<Include url="reiter5dialog.xml" alias="tp5" />
+	<Include url="reiter6dialog.xml" alias="tp6" />
+
+	<Include url="winkeymap.xml" alias="keyMap" />
+
+	<Include url="toolbar.xml" alias="toolbar" />
+	<Include url="menu.xml" alias="menu" />
+
+
+	<menuBar guiId="MENU">
+		<Ref id="menu/file" />
+		<Ref id="menu/ansicht" />
+		<Ref id="menu/hilfe" />
+	</menuBar>
+
+	<borderLayout guiId="TOP" background="PATH_BACKGROUND_COLOR"
+		keyMapId="keyMap/keyMap">
+		<placeBl anchor="north" id="toolbar/toolbar" />
+		<placeBl anchor="center" id="tabpanepanel" />
+	</borderLayout>
+
+	<panel guiId="tabpanepanel" style="raised">
+		<tabbedPane guiId="tabpane" focusable="~t" 
+			focusKeysForward="TAB" focusKeysBackward="shift TAB"
+			tabSelection="{:Events.eventNavigationChanged}">
+			<placeTp title="getTab1Title"
+				condition="isSelectedTab(1)" visible="isTabVisible(1)">
+				<Ref id="tp1/tab1" />
+			</placeTp>
+			<placeTp title="getTab2Title"
+				condition="isSelectedTab(2)"  visible="isTabVisible(2)">
+				<Ref id="tp2/tab2" />
+			</placeTp>
+			<placeTp title="getTab3Title"
+				condition="isSelectedTab(3)"  visible="isTabVisible(3)">
+				<Ref id="tp3/tab3" />
+			</placeTp>
+			<placeTp title="getTab4Title"
+				condition="isSelectedTab(4)"  visible="isTabVisible(4)">
+				<Ref id="tp4/tab4" />
+			</placeTp>
+			<placeTp title="getTab5Title"
+				condition="isSelectedTab(5)"  visible="isTabVisible(5)">
+				<Ref id="tp5/tab5" />
+			</placeTp>
+			<placeTp title="getTab6Title"
+				condition="isSelectedTab(6)"  visible="isTabVisible(6)">
+				<Ref id="tp6/tab6" />
+			</placeTp>
+		</tabbedPane>
+	</panel>
+
+</View>

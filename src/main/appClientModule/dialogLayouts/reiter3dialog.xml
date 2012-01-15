@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE View SYSTEM "view.dtd">
+<View>
+	<panel guiId="tab3">
+
+		<borderLayout>
+			<placeBl anchor="center">
+				<button text="'PDF Export'"  />
+			</placeBl>
+		</borderLayout>
+
+	</panel>
+</View>
