@@ -1,0 +1,57 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.github.funthomas424242</groupId>
+		<artifactId>gtdclient.parent</artifactId>
+		<version>1.0-SNAPSHOT</version>
+		<relativePath>pom.xml</relativePath>
+	</parent>
+
+	<artifactId>gtdclient.site</artifactId>
+	<packaging>pom</packaging>
+
+	<name>GTD Client Site</name>
+	<url>file:///G:/home/tschubert/workspace_projects/de.meinkonzern.gtdclient/target</url>
+
+
+
+	<prerequisites>
+		<maven>3.0</maven>
+	</prerequisites>
+
+
+	<profiles>
+		<profile>
+			<id>remote</id>
+		</profile>
+	</profiles>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.0</version>
+			</plugin>
+		</plugins>
+	</build>
+
+
+	<developers>
+		<developer>
+			<id>SchubertT006</id>
+			<name>Thomas Schubert</name>
+			<email>funthomas424242@googlemail.com</email>
+			<timezone>+1</timezone>
+			<roles>
+				<role>Administrator</role>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+
+</project>
