@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<document>
+	<properties>
+		<title>${project.name}</title>
+		<author email="funthomas424242@googlemail.com">Thomas Schubert</author>
+	</properties>
+	<body>
+
+		<section name="Welcome">
+			<p>
+				A test project to proof the development process at github. We are
+				changing form sourceforge to github at now.
+			</p>
+		</section>
+
+
+	</body>
+</document>
+

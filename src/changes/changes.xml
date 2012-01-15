@@ -1,0 +1,99 @@
+<document>
+	<properties>
+		<title>Changes of wagon-http-sourceforge Plugin</title>
+		<author email="tmichel@users.sourceforge.net">
+			Thomas Schubert
+		</author>
+	</properties>
+	<body>
+		<release version="0.5" date="XX-2011" description="Change the project to maven 3">
+			<action dev="tmichel" type="add">
+				Bug fixing and changes to maven 3. Bugs in backlog:11 ->2
+			</action>
+			<action dev="tmichel" date="11-2011" type="fix" issue="6"
+			  description="bug fixing">
+			Membership CloudBees Foss
+			</action>
+			<action dev="tmichel" date="11-2011" type="fix" issue="8"
+			  description="bug fixing">
+			add Link to CI System
+			Membership CloudBees Foss
+			</action>
+			<action dev="tmichel" date="11-2011" type="fix" issue="3"
+			  description="bug fixing">
+			change-report is missing
+			</action>
+			<action dev="tmichel" date="11-2011" type="fix" issue="5"
+			  description="bug fixing">
+			tests in build failed
+			</action>
+			<action dev="tmichel" date="11-2011" type="fix" issue="4"
+			  description="bug fixing">
+			site generation faild
+			</action>
+		</release>
+		<release version="0.4" date="01-2010" description="Make the project to a final state">
+			<action dev="tmichel" type="update">
+				Removed the plugin Mojo again.
+			</action>
+			<action dev="tmichel" type="add">
+				Cleanup action added to the wagon.
+			</action>
+			<action dev="tmichel" type="update">
+				Changed Logging from sun standard
+				logger to slf4j logger.
+			</action>
+			<action dev="tmichel" type="update">
+				Update the FAQ.
+			</action>
+			<action dev="tmichel" type="update">
+				Update the project web site.
+			</action>
+		</release>
+		<release version="0.3" date="01-2010" description="New stuff and new features">
+			<action dev="tmichel" type="update">
+				Check the response code before
+				downloading a artifact. If code
+				301 (moved permanently) it will be
+				not downloaded.
+				(only meaningful for sourceforge.net file release
+				system)
+			</action>
+			<action dev="tmichel" type="update">
+				Inherited from
+				wagon-http-lightweight version 1.0-beta-6. So the
+				new features of
+				wagon-http-lightweight are available.
+			</action>
+			<action dev="tmichel" type="add">
+				Add a test for invalid sf urls.
+			</action>
+			<action dev="tmichel" type="add">
+				Add a FAQ for this wagon.
+			</action>
+			<action dev="tmichel" type="add">
+				Add a project web site.
+			</action>
+		</release>
+		<release version="0.2" date="01-2010"
+			description="Extend the wagon extension to a maven plugin.">
+			<action dev="tmichel" type="add">
+				Add a Mojo to implements a plugin
+				without function. It is needed to override the wagon extension with
+				newer version wich will be downloaded from sourceforge file release
+				system.
+			</action>
+		</release>
+		<release version="0.1" date="12-2009"
+			description="Initial wagon extension to download the next wagon versions.">
+			<action dev="tmichel" type="add">
+				Hosted the wagon extension in a svn
+				folder to download from sourceforge with maven in a regular method.
+			</action>
+			<action dev="tmichel" type="add">
+				Implements a wagon wich is
+				inherited from wagon-http-lightweight. 
+			</action>
+		</release>
+	</body>
+</document>

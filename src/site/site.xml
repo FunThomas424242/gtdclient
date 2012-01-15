@@ -1,0 +1,26 @@
+<project name="example-1jar-thinlet">
+	<bannerLeft>
+		<name>gtdclient</name>
+		<src>http://sflogo.sourceforge.net/sflogo.php?group_id=293502&amp;type=16
+		</src>
+		<href>http://sourceforge.net/projects/sf-mvn-plugins</href>
+	</bannerLeft>
+	<bannerRight/>
+	<body>
+		<menu name="Master project">
+			<item name="GTD Client Parent" href="http://funthomas424242.github.com/gtdclient/" />
+		</menu>
+		<menu name="Version ${project.version}">
+			<item name="Home" href="index.html" />
+			
+		</menu>
+		<menu ref="reports" />
+	</body>
+	
+	<poweredBy>
+		<logo name="Maven" href="http://maven.apache.org/"
+			img="http://maven.apache.org/images/logos/maven-feather.png" />
+		<logo name="CloudBees" href="http://www.cloudbees.com"
+			img="http://web-static-cloudfront.s3.amazonaws.com/images/badges/BuiltOnDEV.png" />
+	</poweredBy>
+</project>
