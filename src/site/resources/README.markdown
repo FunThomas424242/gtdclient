@@ -6,5 +6,5 @@ in the future.
 Project-Map
 ===========
 + [project web site] (http://funthomas424242.github.com/gtdclient/)
-+ application git repository: git@github.com:FunThomas424242/gtdclient.git
-+ web site git repository: git@github.com:FunThomas424242/gtdclient.git
++ application git repository: git@github.com:FunThomas424242/gtdclient.git (master)
++ web site git repository: git@github.com:FunThomas424242/gtdclient.git (gh-pages)
