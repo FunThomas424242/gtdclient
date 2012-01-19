@@ -6,9 +6,9 @@
 		</author>
 	</properties>
 	<body>
-		<release version="1.0-SNAPSHOT" date="XX-2012" description="Change the project to github">
+		<release version="1.0-SNAPSHOT" date="XX-2012" description="Moved the project to github">
 			<action dev="tmichel" type="add">
-				Changed to github portal.
+				Moved to github portal.
 			</action>
 		</release>
 	</body>

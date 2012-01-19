@@ -1,2 +1,2 @@
-call mvn -Premote -U install
+call mvn -U -Premote clean install site
 pause

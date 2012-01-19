@@ -19,9 +19,12 @@
 
 
 	<profiles>
-
 		<profile>
 			<id>remote</id>
+		</profile>
+
+		<profile>
+			<id>phase1</id>
 			<dependencies>
 				<dependency>
 					<groupId>gui4j</groupId>
@@ -70,6 +73,8 @@
 
 
 	<distributionManagement>
+		<!--snapshotRepository> <id>cloudbees</id> <url>dav:https://repository-funthomas424242.forge.cloudbees.com/snapshot/</url> 
+			<uniqueVersion>false</uniqueVersion> </snapshotRepository -->
 		<site>
 			<id>github</id>
 			<url>scm:svn:https://svn.github.com/FunThomas424242/gtdclient</url>
@@ -131,7 +136,7 @@
 			<extension>
 				<groupId>org.apache.maven.scm</groupId>
 				<artifactId>maven-scm-provider-gitexe</artifactId>
-				
+
 			</extension>
 		</extensions>
 
@@ -157,9 +162,10 @@
 			<plugin>
 				<groupId>net.sf.maven.plugins</groupId>
 				<artifactId>jar-install-plugin</artifactId>
-				<version>0.1-SNAPSHOT</version>
+				<version>0.2-SNAPSHOT</version>
 				<executions>
 					<execution>
+						<phase>generate-sources</phase>
 						<goals>
 							<goal>install</goal>
 						</goals>
@@ -170,12 +176,14 @@
 									<groupId>com.simontuffs.onejar</groupId>
 									<artifactId>one-jar-boot</artifactId>
 									<version>0.98</version>
+									<scope>runtime</scope>
 								</downloadArtifact>
 								<downloadArtifact>
 									<url>http://sourceforge.net/projects/gui4j/files/gui4j/1.2.3/gui4j-1.2.3.jar/download</url>
 									<groupId>gui4j</groupId>
 									<artifactId>gui4j</artifactId>
 									<version>1.2.3</version>
+									<scope>compile</scope>
 								</downloadArtifact>
 							</downloads>
 						</configuration>
@@ -186,6 +194,13 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
+				<dependencies>
+					<dependency>
+						<groupId>net.sf.maven.plugins</groupId>
+						<artifactId>jar-install-plugin</artifactId>
+						<version>0.1-SNAPSHOT</version>
+					</dependency>
+				</dependencies>
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
@@ -212,7 +227,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>3.0</version>
-				
+
 				<configuration>
 					<!--outputDirectory>../com.github.funthomas424242.gtdclient-site/</outputDirectory -->
 					<outputEncoding>UTF-8</outputEncoding>
