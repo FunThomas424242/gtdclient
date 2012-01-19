@@ -72,7 +72,7 @@
 	<distributionManagement>
 		<site>
 			<id>github</id>
-			<url>scm:ssh://git@github.com/FunThomas424242/gtdclient.git</url>
+			<url>scm:svn:https://svn.github.com/FunThomas424242/gtdclient</url>
 		</site>
 	</distributionManagement>
 

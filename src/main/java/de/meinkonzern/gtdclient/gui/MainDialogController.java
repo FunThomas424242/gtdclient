@@ -92,7 +92,7 @@ public class MainDialogController extends AbstractDialogController implements
     }
 
     public String getTab1Title() {
-        return "Übersicht";
+        return "Ãœbersicht";
     }
 
     public String getTab2Title() {
@@ -100,7 +100,7 @@ public class MainDialogController extends AbstractDialogController implements
     }
 
     public String getTab3Title() {
-        return "Ausführbare Aufgaben";
+        return "AusfÃ¼hrbare Aufgaben";
     }
 
     public String getTab4Title() {
@@ -108,14 +108,14 @@ public class MainDialogController extends AbstractDialogController implements
     }
 
     public String getTab5Title() {
-        return "Überprüfung";
+        return "ÃœberprÃ¼fung";
     }
 
     public String getTab6Title() {
         return "Verwaltung";
     }
 
-    // evtl. nicht mehr benötigt
+    // evtl. nicht mehr benÃ¶tigt
 
 //    public void exportToPDF() {
 //        final Date currentDate = new Date();

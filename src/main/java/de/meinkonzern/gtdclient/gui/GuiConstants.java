@@ -39,7 +39,7 @@ public interface GuiConstants {
 
     public final String PATH_GUI4J_PROPERTIES = "gui4jComponents.properties";
 
-    public final String LABEL_EXIT = "Schlieﬂen         ESC";
+    public final String LABEL_EXIT = "Schlie√üen         ESC";
 
     public final String TOOLTIP_EXIT = "Raus hier";
 

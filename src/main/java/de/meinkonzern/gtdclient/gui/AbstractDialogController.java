@@ -70,7 +70,7 @@ public abstract class AbstractDialogController implements
             SystemTray tray = SystemTray.getSystemTray();
             tray.remove(GuiConstants.TRAY_ICON);
         }
-        System.out.println("Standardr¸ckfrage Wirklich Schlieﬂen?");
+        System.out.println("Standardr√ºckfrage Wirklich Schlie√üen?");
         System.out.println("call onWindowClosing");
         this.shutdownEngine = true;
         if (this.gui4jView != null) {

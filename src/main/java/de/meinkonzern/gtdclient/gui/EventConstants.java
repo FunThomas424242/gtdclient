@@ -35,7 +35,7 @@ public interface EventConstants {
     // Reiter 1
     public final SimpleEvent eventInputActionChanged = new SimpleEvent();
     
-    // evtl. nicht benötigt
+    // evtl. nicht benÃ¶tigt
     public final SimpleEvent eventViewChanged = new SimpleEvent();
 }
 

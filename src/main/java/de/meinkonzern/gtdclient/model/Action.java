@@ -46,7 +46,7 @@ public class Action {
 
 	private boolean input = true;
 
-	// nur das Model soll Instanzen erstellen können
+	// nur das Model soll Instanzen erstellen kÃ¶nnen
 	protected Action() {
 
 	}
