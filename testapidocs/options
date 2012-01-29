@@ -1,0 +1,26 @@
+-classpath
+'/scratch/hudson/workspace/gtdclient  (snapshot)/target/classes:/scratch/hudson/workspace/gtdclient  (snapshot)/target/test-classes:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/javax/validation/validation-api/1.0.CR5/validation-api-1.0.CR5.jar:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/gui4j/gui4j/1.2.3/gui4j-1.2.3.jar:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/org/slf4j/slf4j-api/1.5.6/slf4j-api-1.5.6.jar:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/junit/junit/4.4/junit-4.4.jar:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/com/simontuffs/onejar/one-jar-boot/0.98/one-jar-boot-0.98.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/scratch/hudson/workspace/gtdclient  (snapshot)/src/test/java'
+-author
+-bottom
+'Copyright &#169; 2010-2012. All Rights Reserved.'
+-charset
+'UTF-8'
+-d
+'/scratch/hudson/workspace/gtdclient  (snapshot)/target/site/testapidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'GTD Client 1.0-SNAPSHOT Test API'
+-link
+'../apidocs'
+-linkoffline
+'http://download.oracle.com/javase/6/docs/api' '/scratch/hudson/workspace/gtdclient  (snapshot)/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'GTD Client 1.0-SNAPSHOT Test API'
