@@ -27,7 +27,7 @@ public interface Reiter1DialogConstants extends GuiConstants, KeyConstants,
         EventConstants {
 
     public final Icon ICON_INPUT = new ImageIcon(GuiConstants.class
-            .getResource("/img/BlätterStapel_32x32.gif"));
+            .getResource("/img/BlaetterStapel_32x32.gif"));
 
     public final Icon ICON_PASTTICKLER = new ImageIcon(GuiConstants.class
             .getResource("/img/greminus.gif"));
