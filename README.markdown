@@ -1,10 +1,15 @@
-GDT Client is a test project to develop java, maven and osgi projects at github. 
+**GTD Client** is a test project to develop java, maven and osgi projects on github.
 The first attempt based on templates of my sourceforge projects. So there 
 will be shown links, logos and so on related to sourceforge. This will be fixed
 in the future.
 
-Project-Map
-===========
-+ [project web site] (http://funthomas424242.github.com/gtdclient/)
-+ application git repository: git@github.com:FunThomas424242/gtdclient.git (master)
-+ web site git repository: git@github.com:FunThomas424242/gtdclient.git (gh-pages)
+
+**Project Site:** http://funthomas424242.github.com/gtdclient/
+
+**Maven Repositories**
+
+ - snapshot repository: https://repository-funthomas424242.forge.cloudbees.com/snapshot/
+ - release repository: https://repository-funthomas424242.forge.cloudbees.com/release/
+
+**Project sources on GitHub:** https://github.com/funthomas424242/gtdclient/
+
