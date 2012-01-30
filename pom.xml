@@ -148,15 +148,27 @@
             <id>cloudbees-snapshots</id>
             <name>Snapshot Repository at CloudBees</name>
             <url>https://repository-funthomas424242.forge.cloudbees.com/snapshot/</url>
-            <snapshots><enabled>true</enabled></snapshots>
-            <releases><enabled>false</enabled></releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
         </pluginRepository>
         <pluginRepository>
             <id>cloudbees-releases</id>
             <name>Release Repository at CloudBees</name>
             <url>https://repository-funthomas424242.forge.cloudbees.com/release/</url>
-            <snapshots><enabled>false</enabled></snapshots>
-            <releases><enabled>true</enabled></releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+        <pluginRepository>
+            <id>onejar-maven-plugin.googlecode.com</id>
+            <url>http://onejar-maven-plugin.googlecode.com/svn/mavenrepo</url>
         </pluginRepository>
     </pluginRepositories>
 
@@ -264,13 +276,13 @@
                         </goals>
                         <configuration>
                             <downloads>
-                                <downloadArtifact>
-                                    <url>http://sourceforge.net/projects/one-jar/files/one-jar/0.98%20RCs/one-jar-0.98-RC2/one-jar-boot-0.98.jar/download</url>
+                                <!--downloadArtifact>
+                                    <url>http://sourceforge.net/projects/one-jar/files/one-jar/one-jar-0.97/one-jar-boot-0.97.jar/download</url>
                                     <groupId>com.simontuffs.onejar</groupId>
                                     <artifactId>one-jar-boot</artifactId>
-                                    <version>0.98</version>
+                                    <version>0.97</version>
                                     <scope>runtime</scope>
-                                </downloadArtifact>
+                                </downloadArtifact-->
                                 <downloadArtifact>
                                     <url>http://sourceforge.net/projects/gui4j/files/gui4j/1.2.3/gui4j-1.2.3.jar/download</url>
                                     <groupId>gui4j</groupId>
@@ -283,6 +295,39 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.dstovall</groupId>
+                <artifactId>onejar-maven-plugin</artifactId>
+                <version>1.4.4</version>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <mainClass>de.meinkonzern.gtdclient.Launcher</mainClass>
+                            <!-- Optional -->
+                            <onejarVersion>0.97</onejarVersion>
+                            <!-- Optional, use only if you need to include 
+                                native libraries (dll's) -->
+                            <!--binlibs>
+                                <fileSet>
+                                    <directory>${project.build.directory}/dllextract</directory>
+                                    <includes>
+                                        <include>test.dll</include>
+                                    </includes>
+                                </fileSet>
+                            </binlibs-->
+                            <!-- Optional, default is false -->
+                            <attachToBuild>true</attachToBuild>
+                            <!-- Optional, default is "onejar" -->
+                            <classifier>onejar</classifier>
+                        </configuration>
+                        <goals>
+                            <goal>one-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
 
             <plugin>
                 <groupId>com.github.github</groupId>
@@ -444,14 +489,14 @@
             <!--plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-deploy-plugin</artifactId> 
                 <configuration> <updateReleaseInfo>true</updateReleaseInfo> <generatePom>true</generatePom> 
                 </configuration> </plugin -->
-              
-            
+
+
             <!--plugin> <groupId>net.sf.maven.plugins</groupId> <artifactId>1jar-maven-plugin</artifactId> 
                 <version>0.2</version> <executions> <execution> <goals> <goal>1jar</goal> 
                 </goals> <configuration> <mainClass> de.meinkonzern.gtdclient.Launcher </mainClass> 
                 <stripVersion>false</stripVersion> </configuration> </execution> </executions> 
                 </plugin -->
-           
+
 
             <!--plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-jar-plugin</artifactId> 
                 <executions> <execution> <phase>package</phase> <goals> <goal>sign</goal> 
@@ -459,7 +504,7 @@
                 <keystore>${user.keystore}</keystore> <alias>${user.keystore-alias}</alias> 
                 <storepass>${user.keystore-pass}</storepass> <verify>true</verify> </configuration> 
                 </plugin -->
-                            
+
         </plugins>
     </build>
 
