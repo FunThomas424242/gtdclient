@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.5" timestamp="2012-01-30T19:10:34.971">
+<pmd version="4.2.5" timestamp="2012-02-01T19:14:00.475">
 <file name="/scratch/hudson/workspace/gtdclient  (snapshot)/src/main/java/de/meinkonzern/gtdclient/gui/MainDialogController.java">
 <violation beginline="22" endline="22" begincolumn="1" endcolumn="37" rule="UnusedImports" ruleset="Import Statement Rules" package="de.meinkonzern.gtdclient.gui" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
 Avoid unused imports such as 'java.io.FileNotFoundException'
