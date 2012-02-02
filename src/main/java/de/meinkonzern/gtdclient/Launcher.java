@@ -30,7 +30,7 @@ public class Launcher {
         
         
         final URL gui4jPropertieUrl = Launcher
-                .getResource(GuiConstants.PATH_GUI4J_PROPERTIES);
+                .getResource("dialogLayouts/"+GuiConstants.PATH_GUI4J_PROPERTIES);
         System.out.println("URL:"+gui4jPropertieUrl.toString());
         final Gui4j gui4jEngine = Gui4jFactory.createGui4j(validateXML,
                 logInvoke, numberOfWorkerThreads, gui4jPropertieUrl);

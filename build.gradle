@@ -1,5 +1,5 @@
 apply plugin: 'java';
-apply plugin: 'osgi';
+//apply plugin: 'osgi';
 
 
 repositories {
@@ -29,27 +29,16 @@ artifactId = "gtdclient";
 version = '1.0-SNAPSHOT';
 
 //build process
-$buildDir = "target";
+buildDir = "target";
 
-
-jar {
-    manifest {
-        attributes 'Main-Class': 'de.meinkonzern.gtdclient.Launcher'
-    }
-}
- 
- 
 
 dependencies {
-   // compile 'gui4j:gui4j:1.2.3@java'
     compile files(file)
     compile 'javax.validation:validation-api:1.0.CR5';
     runtime 'commons-logging:commons-logging:1.1.1';
     runtime 'dom4j:dom4j:1.6.1';
     runtime 'org.slf4j:slf4j-jdk14:1.5.6';
     runtime 'junit:junit:4.8.2'
-    //intTestRuntime 'asm:asm-all:3.3.1'
-    
 }
 
 
@@ -57,14 +46,16 @@ dependencies {
 
 
 jar {
+
     manifest { // the manifest of the default jar is of type OsgiManifest
-        name = 'overwrittenSpecialOsgiName'
-        instruction 'Private-Package',
-                'org.mycomp.package1',
-                'org.mycomp.package2'
-        instruction 'Bundle-Vendor', 'FunThomas424242 (Thomas Schubert)'
-        instruction 'Bundle-Description', 'GTD Client'
-        instruction 'Bundle-DocURL', 'http://funthomas424242.github.com/gtdclient/'
+      //  name = 'overwrittenSpecialOsgiName'
+       // instruction 'Private-Package',
+        //        'org.mycomp.package1',
+         //       'org.mycomp.package2'
+        //instruction 'Bundle-Vendor', 'FunThomas424242 (Thomas Schubert)'
+        //instruction 'Bundle-Description', 'GTD Client'
+        //instruction 'Bundle-DocURL', 'http://funthomas424242.github.com/gtdclient/'
+        attributes 'Main-Class': 'de.meinkonzern.gtdclient.Launcher'
     }
 }
 
