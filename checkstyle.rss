@@ -2,14 +2,14 @@
 
 <rss version="0.91">
   <channel>
-    <title>GTD Client - Checkstyle report</title>
+    <title>GTD Client (OneJar) - Checkstyle report</title>
     <link>https://github.com/FunThomas424242/gtdclient</link>
-    <description>GTD Client - Checkstyle report</description>
+    <description>GTD Client (OneJar) - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2012</copyright>
     <item>
       <title>File: 18,
-             Errors: 1218,
+             Errors: 1224,
              Warnings: 0,
              Infos: 0
       </title>
@@ -52,7 +52,7 @@
                   0
                 </td>
                 <td>
-                  29
+                  35
                 </td>
               </tr>
                           <tr>

@@ -15,7 +15,7 @@
 -docencoding
 'UTF-8'
 -doctitle
-'GTD Client 1.0-SNAPSHOT Test API'
+'GTD Client (OneJar) 1.0-SNAPSHOT Test API'
 -link
 '../apidocs'
 -linkoffline
@@ -23,4 +23,4 @@
 -use
 -version
 -windowtitle
-'GTD Client 1.0-SNAPSHOT Test API'
+'GTD Client (OneJar) 1.0-SNAPSHOT Test API'

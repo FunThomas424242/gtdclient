@@ -15,10 +15,10 @@
 -docencoding
 'UTF-8'
 -doctitle
-'GTD Client 1.0-SNAPSHOT API'
+'GTD Client (OneJar) 1.0-SNAPSHOT API'
 -linkoffline
 'http://download.oracle.com/javase/6/docs/api' '/scratch/hudson/workspace/gtdclient  (snapshot)/target/javadoc-bundle-options'
 -use
 -version
 -windowtitle
-'GTD Client 1.0-SNAPSHOT API'
+'GTD Client (OneJar) 1.0-SNAPSHOT API'
