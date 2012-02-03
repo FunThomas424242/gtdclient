@@ -335,6 +335,7 @@
                 <version>0.4</version>
                 <configuration>
                     <message>Building site for ${project.version}</message>
+                    <path>onejar</path>
                 </configuration>
                 <executions>
                     <execution>
