@@ -94,7 +94,7 @@
                   0
                 </td>
                 <td>
-                  39
+                  38
                 </td>
               </tr>
                           <tr>
@@ -108,7 +108,21 @@
                   0
                 </td>
                 <td>
-                  6
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/FunThomas424242/gtdclient/checkstyle.html#de.meinkonzern.gtdclient.model.Action.java">de/meinkonzern/gtdclient/model/Action.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  358
                 </td>
               </tr>
                           <tr>
@@ -127,20 +141,6 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/FunThomas424242/gtdclient/checkstyle.html#de.meinkonzern.gtdclient.model.Action.java">de/meinkonzern/gtdclient/model/Action.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  359
-                </td>
-              </tr>
-                          <tr>
-                <td>
                   <a href="https://github.com/FunThomas424242/gtdclient/checkstyle.html#de.meinkonzern.gtdclient.gui.AbstractDialogController.java">de/meinkonzern/gtdclient/gui/AbstractDialogController.java</a>
                 </td>
                 <td>
@@ -150,21 +150,7 @@
                   0
                 </td>
                 <td>
-                  65
-                </td>
-              </tr>
-                          <tr>
-                <td>
-                  <a href="https://github.com/FunThomas424242/gtdclient/checkstyle.html#de.meinkonzern.gtdclient.gui.Reiter2DialogController.java">de/meinkonzern/gtdclient/gui/Reiter2DialogController.java</a>
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  0
-                </td>
-                <td>
-                  60
+                  64
                 </td>
               </tr>
                           <tr>
@@ -179,6 +165,20 @@
                 </td>
                 <td>
                   178
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/FunThomas424242/gtdclient/checkstyle.html#de.meinkonzern.gtdclient.gui.Reiter2DialogController.java">de/meinkonzern/gtdclient/gui/Reiter2DialogController.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  60
                 </td>
               </tr>
                           <tr>
@@ -206,7 +206,7 @@
                   0
                 </td>
                 <td>
-                  40
+                  41
                 </td>
               </tr>
                           <tr>
@@ -220,7 +220,7 @@
                   0
                 </td>
                 <td>
-                  72
+                  73
                 </td>
               </tr>
                           <tr>
@@ -239,7 +239,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/FunThomas424242/gtdclient/checkstyle.html#de.meinkonzern.gtdclient.gui.MainDialogController.java">de/meinkonzern/gtdclient/gui/MainDialogController.java</a>
+                  <a href="https://github.com/FunThomas424242/gtdclient/checkstyle.html#de.meinkonzern.gtdclient.model.GuiControlModel.java">de/meinkonzern/gtdclient/model/GuiControlModel.java</a>
                 </td>
                 <td>
                   0
@@ -248,7 +248,7 @@
                   0
                 </td>
                 <td>
-                  96
+                  40
                 </td>
               </tr>
                           <tr>
@@ -267,7 +267,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://github.com/FunThomas424242/gtdclient/checkstyle.html#de.meinkonzern.gtdclient.model.GuiControlModel.java">de/meinkonzern/gtdclient/model/GuiControlModel.java</a>
+                  <a href="https://github.com/FunThomas424242/gtdclient/checkstyle.html#de.meinkonzern.gtdclient.gui.MainDialogController.java">de/meinkonzern/gtdclient/gui/MainDialogController.java</a>
                 </td>
                 <td>
                   0
@@ -276,7 +276,7 @@
                   0
                 </td>
                 <td>
-                  40
+                  96
                 </td>
               </tr>
                       </tbody>

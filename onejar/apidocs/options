@@ -1,5 +1,5 @@
 -classpath
-'/scratch/hudson/workspace/gtdclient  (snapshot)/target/classes:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/javax/validation/validation-api/1.0.CR5/validation-api-1.0.CR5.jar:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/gui4j/gui4j/1.2.3/gui4j-1.2.3.jar:/scratch/hudson/workspace/gtdclient  (snapshot)/.repository/junit/junit/4.4/junit-4.4.jar'
+'/scratch/hudson/workspace/gtdclient  (snapshot)/target/classes:/home/hudson/.m2/repository/javax/validation/validation-api/1.0.CR5/validation-api-1.0.CR5.jar:/home/hudson/.m2/repository/gui4j/gui4j/1.2.3/gui4j-1.2.3.jar:/home/hudson/.m2/repository/junit/junit/4.4/junit-4.4.jar'
 -encoding
 'UTF-8'
 -protected
