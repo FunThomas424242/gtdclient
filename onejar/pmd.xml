@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.5" timestamp="2012-07-08T00:10:22.523">
-<file name="/scratch/hudson/workspace/gtdclient  (snapshot)/src/main/java/de/meinkonzern/gtdclient/gui/MainDialogController.java">
+<pmd version="4.2.5" timestamp="2012-09-17T18:00:22.176">
+<file name="/scratch/jenkins/workspace/gtdclient  (snapshot)/src/main/java/de/meinkonzern/gtdclient/gui/MainDialogController.java">
 <violation beginline="22" endline="22" begincolumn="1" endcolumn="37" rule="UnusedImports" ruleset="Import Statement Rules" package="de.meinkonzern.gtdclient.gui" externalInfoUrl="http://pmd.sourceforge.net/rules/imports.html#UnusedImports" priority="4">
 Avoid unused imports such as 'java.io.FileNotFoundException'
 </violation>
@@ -17,16 +17,16 @@ Avoid unused imports such as 'java.util.Date'
 Avoid unused private fields such as 'service'.
 </violation>
 </file>
-<file name="/scratch/hudson/workspace/gtdclient  (snapshot)/src/main/java/de/meinkonzern/gtdclient/gui/Reiter2DialogController.java">
+<file name="/scratch/jenkins/workspace/gtdclient  (snapshot)/src/main/java/de/meinkonzern/gtdclient/gui/Reiter2DialogController.java">
 <violation beginline="36" endline="36" begincolumn="35" endcolumn="42" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="de.meinkonzern.gtdclient.gui" class="Reiter2DialogController" variable="guiModel" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
 Avoid unused private fields such as 'guiModel'.
 </violation>
 </file>
-<file name="/scratch/hudson/workspace/gtdclient  (snapshot)/src/main/java/de/meinkonzern/gtdclient/model/GTDModel.java">
+<file name="/scratch/jenkins/workspace/gtdclient  (snapshot)/src/main/java/de/meinkonzern/gtdclient/model/GTDModel.java">
 <violation beginline="32" endline="32" begincolumn="41" endcolumn="52" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="de.meinkonzern.gtdclient.model" class="GTDModel" variable="historieList" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
 Avoid unused private fields such as 'historieList'.
 </violation>
 </file>
-<suppressedviolation filename="/scratch/hudson/workspace/gtdclient  (snapshot)/src/main/java/de/meinkonzern/gtdclient/Launcher.java" suppressiontype="annotation" msg="Avoid unused local variables such as 'preferencesModel'." usermsg=""/>
-<suppressedviolation filename="/scratch/hudson/workspace/gtdclient  (snapshot)/src/main/java/de/meinkonzern/gtdclient/Launcher.java" suppressiontype="annotation" msg="Avoid unused local variables such as 'mainDialog'." usermsg=""/>
+<suppressedviolation filename="/scratch/jenkins/workspace/gtdclient  (snapshot)/src/main/java/de/meinkonzern/gtdclient/Launcher.java" suppressiontype="annotation" msg="Avoid unused local variables such as 'preferencesModel'." usermsg=""/>
+<suppressedviolation filename="/scratch/jenkins/workspace/gtdclient  (snapshot)/src/main/java/de/meinkonzern/gtdclient/Launcher.java" suppressiontype="annotation" msg="Avoid unused local variables such as 'mainDialog'." usermsg=""/>
 </pmd>
