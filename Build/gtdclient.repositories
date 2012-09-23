@@ -32,6 +32,10 @@
 // Feedback
 //git:https://github.com/DevBoost/Feedback.git!Core/
 
+
+//DevBuild Extensions
+git:https://github.com/DevBoost/BuildBoost.git!Extensions/Maven/
+
 //Sourceforge Resources
 get:http://sourceforge.net/projects/gui4j/files/gui4j/1.2.3/gui4j-1.2.3.jar/download
 
