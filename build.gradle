@@ -15,7 +15,7 @@ repositories {
 
 def url = new URL("http://sourceforge.net/projects/gui4j/files/gui4j/1.2.3/gui4j-1.2.3.jar/download")
  
-def file = new File("gui4j-1.2.3.jar");
+def file = new File("lib/gui4j-1.2.3.jar");
  
 url.withInputStream { stream ->
         file << stream
@@ -46,8 +46,8 @@ dependencies {
 
 
 jar {
-
-    manifest { // the manifest of the default jar is of type OsgiManifest
+    
+    // manifest { // the manifest of the default jar is of type OsgiManifest
       //  name = 'overwrittenSpecialOsgiName'
        // instruction 'Private-Package',
         //        'org.mycomp.package1',
@@ -55,7 +55,39 @@ jar {
         //instruction 'Bundle-Vendor', 'FunThomas424242 (Thomas Schubert)'
         //instruction 'Bundle-Description', 'GTD Client'
         //instruction 'Bundle-DocURL', 'http://funthomas424242.github.com/gtdclient/'
-        attributes 'Main-Class': 'de.meinkonzern.gtdclient.Launcher'
-    }
+    //    attributes 'Main-Class': 'com.simontuffs.onejar.Boot'
+    //    attributes 'One-Jar-Main-Class': 'de.meinkonzern.gtdclient.Launcher'
+    //} 
+ }
+
+
+println jar.archiveName
+println relativePath(jar.destinationDir)
+println relativePath(jar.archivePath)    
+    
+task dist(type: Jar) {
+   dependsOn jar
+   classifier = 'onejar'
+   into('main'){
+   	from jar.archivePath
+   }
+   into('lib'){
+     //from configurations.compile
+     from configurations.runtime
+   }
+   into('META-INF'){
+   	 from ('src/main/appClientModule/META-INF'){
+   	 	include 'MANIFEST.MF'
+   	 }
+   }  
 }
+println dist.archiveName
+println relativePath(dist.destinationDir)
+println relativePath(dist.archivePath) 
+
+artifacts {
+   dist
+}
+    
+
 
