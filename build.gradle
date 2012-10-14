@@ -72,7 +72,6 @@ task dist(type: Jar) {
    	from jar.archivePath
    }
    into('lib'){
-     //from configurations.compile
      from configurations.runtime
    }
    into('META-INF'){
