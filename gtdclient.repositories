@@ -1,8 +1,11 @@
+//DevBuild Extensions
 //git:https://github.com/DevBoost/BuildBoost.git!Extensions/EMF/
 //git:https://github.com/DevBoost/BuildBoost.git!Extensions/EMFText/
 //git:https://github.com/DevBoost/BuildBoost.git!Extensions/EMFTextExamples/
 //git:https://github.com/DevBoost/BuildBoost.git!Extensions/JUnit/
-//git:https://github.com/DevBoost/BuildBoost.git!Extensions/UpdateSite/
+git:https://github.com/DevBoost/BuildBoost.git!Extensions/UpdateSite/
+git:https://github.com/DevBoost/BuildBoost.git!Extensions/Maven/
+
 
 // EMFText
 //git:https://github.com/DevBoost/EMFText.git!Core/Access/
@@ -30,11 +33,11 @@
 //get:http://ftp-stud.fht-esslingen.de/pub/Mirrors/eclipse/modeling/emf/validation/downloads/drops/1.6.0/R201206271200/emf-validation-runtime-1.6.0.zip!eclipse/features/org.eclipse.emf.validation_1.6.0.v20120328-0001-479-9oB56N5BBR6LCA6/feature.xml
 
 // Feedback
-//git:https://github.com/DevBoost/Feedback.git!Core/
+git:https://github.com/DevBoost/Feedback.git!Core/
 
 
-//DevBuild Extensions
-git:https://github.com/DevBoost/BuildBoost.git!Extensions/Maven/
+
+
 
 //Sourceforge Resources
 //get:http://sourceforge.net/projects/gui4j/files/gui4j/1.2.3/gui4j-1.2.3.jar/download
