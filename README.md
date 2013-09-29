@@ -21,7 +21,7 @@ in the future.
 
 **Project sources on GitHub:** https://github.com/funthomas424242/gtdclient/
 
-**BuildStatus**: [![Build Status](https://funthomas424242.ci.cloudbees.com/job/gtdclient/badge/icon)](https://funthomas424242.ci.cloudbees.com/job/gtdclient/)
+**BuildStatus**: [![Build Status](https://funthomas424242.ci.cloudbees.com/buildStatus/icon?job=gtdclient)](https://funthomas424242.ci.cloudbees.com/job/gtdclient/)
 
 
 Powered by
