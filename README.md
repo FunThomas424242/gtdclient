@@ -15,3 +15,9 @@ in the future.
 
 **Project sources on GitHub:** https://github.com/funthomas424242/gtdclient/
 
+**BuildStatus**: [![Build Status](https://funthomas424242.ci.cloudbees.com/job/gtdclient%20%20snapshots/badge/icon)](https://funthomas424242.ci.cloudbees.com/job/gtdclient%20%20snapshots/)
+
+
+**Powered by**
+
+[![CloudBees-Logo](http://www.cloudbees.com/sites/default/files/Button-Powered-by-CB.png)](http://www.cloudbees.com)
