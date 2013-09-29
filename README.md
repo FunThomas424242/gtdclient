@@ -1,3 +1,9 @@
+GTDClient
+=========
+
+Project Info
+------------
+
 **Branch master** = delivery as osgi bundle application (eclipse rich client app).
 
 **GTD Client** is a test project to develop java, maven and osgi projects on github.
@@ -18,6 +24,9 @@ in the future.
 **BuildStatus**: [![Build Status](https://funthomas424242.ci.cloudbees.com/job/gtdclient/badge/icon)](https://funthomas424242.ci.cloudbees.com/job/gtdclient/)
 
 
-**Powered by**
+Powered by
+----------
+
+[![Maven](http://maven.apache.org/images/logos/maven-feather.png)](http://maven.apache.org)
 
 [![CloudBees-Logo](http://www.cloudbees.com/sites/default/files/Button-Powered-by-CB.png)](http://www.cloudbees.com)
