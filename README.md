@@ -1,3 +1,5 @@
+[![Stories in Ready](https://badge.waffle.io/FunThomas424242/gtdclient.png?label=ready&title=Ready)](http://waffle.io/FunThomas424242/gtdclient)
+
 GTDClient
 =========
 
